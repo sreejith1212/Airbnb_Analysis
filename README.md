@@ -1,4 +1,4 @@
-# Airbnb_Analysis
+# Airbnb Analysis
 Building a simple user friendly UI with Streamlit, which can retrieve data from the MongoDB, perform data cleaning and preparation, do initial analysis and find relations between different data fields, display interactive geospatial visualizations, and create dynamic plots on the streamlit UI and Power BI dashboard to gain insights into pricing variations, availability patterns, and location-based trends.
 ## Pre-Requisite
 1) Python: Install Python
