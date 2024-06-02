@@ -167,9 +167,14 @@ if page == "Data Preparation":
         else:
             container_2.warning("Please fetch data first!")
 
+    col001, col002 = st.columns([10,2])
+    col002.write(":orange[Note: All cost is in dollars($)]")
 
 if page == "Exploratory Data Analysis (EDA)":
     
+    col001, col002 = st.columns([10,2])
+    col002.write(":orange[Note: All cost is in dollars($)]")
+
     processed_airbnb_df = st.session_state['processed_airbnb_df']
     
     st.header("Exploratory Data Analysis (EDA) on Preprocessed Airbnb Data", divider = "rainbow")
@@ -270,29 +275,29 @@ if page == "Exploratory Data Analysis (EDA)":
             fig, ax = plt.subplots(figsize=(12, 3))
             sorted_property_types = processed_airbnb_df['Country'].value_counts()
             ax = sns.countplot(data=processed_airbnb_df, x='Country', order=sorted_property_types.index, palette="Paired", ax=ax)
-            ax.set_title("Count for each country")
+            ax.set_title("Listing Count For Each Country")
             st.pyplot(fig)
 
             fig, ax = plt.subplots(figsize=(12, 5))
             sorted_property_types = processed_airbnb_df['Property_type'].value_counts()
             ax = sns.countplot(data=processed_airbnb_df, y='Property_type', order=sorted_property_types.index, palette="Set2", ax=ax)
-            ax.set_title("Count for each property type")
+            ax.set_title("Listing Count For Each Property Type")
             st.pyplot(fig)
 
 
             fig, ax = plt.subplots(figsize=(12, 2))
             ax = sns.countplot(data=processed_airbnb_df, y='Room_type', palette='Dark2')
-            ax.set_title("Count of each room type")
+            ax.set_title("Count Of Each Room Type")
             st.pyplot(fig)
 
             fig, ax = plt.subplots(figsize=(12, 2))
             ax = sns.countplot(data=processed_airbnb_df, x='Cancellation_policy', palette='pastel')
-            ax.set_title("Count of each Cancellation policy")
+            ax.set_title("Count Of Each Cancellation Policy")
             st.pyplot(fig)
 
             fig, ax = plt.subplots(figsize=(12, 3))
             ax = sns.countplot(data=processed_airbnb_df, x='Bed_type', palette='Accent')
-            ax.set_title("Count of each bed type")
+            ax.set_title("Count Of Each Bed Type")
             st.pyplot(fig)
 
         else:
@@ -315,6 +320,9 @@ if page == "Exploratory Data Analysis (EDA)":
             st.warning("Processed Data Not Available!")
 
 if page == "Geospatial Visualization":
+
+    col001, col002 = st.columns([10,2])
+    col002.write(":orange[Note: All cost is in dollars($)]")
 
     processed_airbnb_df = st.session_state['processed_airbnb_df']
     st.header("Search Airbnb with Geospatial Visualization", divider = "rainbow")
@@ -430,6 +438,9 @@ if page == "Geospatial Visualization":
 
 if page == "Advanced Analysis":
 
+    col001, col002 = st.columns([10,2])
+    col002.write(":orange[Note: All cost is in dollars($)]")
+    
     processed_airbnb_df = st.session_state['processed_airbnb_df']
     st.header("Advanced Analysis of the Airbnb Data", divider = "rainbow")
     if processed_airbnb_df is not None:
