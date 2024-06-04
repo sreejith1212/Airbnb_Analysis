@@ -14,7 +14,8 @@ Building a simple user friendly UI with Streamlit, which can retrieve data from 
 2) From "Data Preparation" page, connect to MongoDB and retrieve the airbnb data. Also from this page, preprocess the extracted data.
 3) From "Exploratory Data Analysis (EDA)" page, do basic EDA to analyse the extracted data.
 4) From "Geospatial visualization" page, user can search different property types for the available countries with the option to filter out properties based on review score. These results are displayed on a map for easy identification of geographical position of the property.
-5) From "Advanced Analysis" page, get general insights about the extracted airbnb data. Also, user can navigate to the power BI dashboard from this page. 
+5) From "Advanced Analysis" page, get general insights about the extracted airbnb data.
+6) User can also view the power BI dashboard attached to the repository. 
 
 ## Features
 1) Setting up Streamlit app: Using Streamlit application to create a simple UI.
